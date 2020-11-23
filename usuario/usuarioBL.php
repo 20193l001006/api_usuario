@@ -16,7 +16,7 @@
         public function login($usuarioDTO) {
             $this -> conn -> OpenConnection();
             $connsql = $this->conn ->getConnection();
-            $sqlQuery = "SELECT * FROM usuario WHERE username = :usuario AND password = :contrasena";
+            $sqlQuery = "SELECT * FROM usuarios WHERE username = :usuario AND password = :contrasena";
 
             try{
                 if($connsql) {
